@@ -1,0 +1,8 @@
+{
+	"extends": "./tsconfig.root.json",
+	"compilerOptions": {
+		"noEmit": true,
+		"importsNotUsedAsValues": "error"
+	},
+	"include": ["examples", "source", "tests", "type-tests"]
+}

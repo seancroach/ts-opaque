@@ -1,0 +1,81 @@
+{
+	"name": "ts-opaque",
+	"version": "2.2.0",
+	"description": "Easy-to-use library that implements opaque types in TypeScript!",
+	"license": "MIT",
+	"repository": "seancroach/ts-opaque",
+	"author": "Sean Colin Roach <me@seancroach.dev> (https://seancroach.dev)",
+	"main": "dist/index.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"build": "npm run build:dist && npm run build:docs",
+		"build:dist": "npm run clean:dist && tsc -p source",
+		"build:docs": "npm run clean:docs && typedoc",
+		"clean": "npm run clean:dist && npm run clean:docs",
+		"clean:dist": "rm -rf dist",
+		"clean:docs": "rm -rf docs",
+		"format": "npm run prettier:write",
+		"lint": "eslint \"**/*.ts\"",
+		"prepare": "npm run prettier:write && npm run build",
+		"prettier:check": "prettier \"**\" --check --loglevel silent",
+		"prettier:write": "prettier \"**\" --write --loglevel silent",
+		"test": "npm run prettier:check && tsc -p type-tests && ava --fail-fast"
+	},
+	"files": [
+		"dist"
+	],
+	"keywords": [
+		"brand",
+		"nominal",
+		"opaque",
+		"ts",
+		"typescript"
+	],
+	"devDependencies": {
+		"@commitlint/cli": "^11.0.0",
+		"@commitlint/config-conventional": "^11.0.0",
+		"@seancroach/eslint-config-typescript": "^3.0.6",
+		"@seancroach/tsconfig": "^2.1.0",
+		"ava": "^3.14.0",
+		"eslint": "^7.16.0",
+		"husky": "^4.3.6",
+		"prettier": "^2.2.1",
+		"prettier-plugin-package": "^1.3.0",
+		"ts-node": "^9.1.1",
+		"tsd": "^0.14.0",
+		"typescript": "^4.1.3"
+	},
+	"ava": {
+		"files": [
+			"tests/*.ts"
+		],
+		"extensions": [
+			"ts"
+		],
+		"require": [
+			"ts-node/register"
+		]
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
+	},
+	"eslintConfig": {
+		"extends": "@seancroach/eslint-config-typescript",
+		"parserOptions": {
+			"project": "tsconfig.eslint.json"
+		}
+	},
+	"husky": {
+		"hooks": {
+			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
+			"pre-commit": "npm test"
+		}
+	},
+	"prettier": {
+		"proseWrap": "always"
+	}
+}
