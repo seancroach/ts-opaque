@@ -1,5 +1,5 @@
 {
-	"inputFiles": "source",
-	"mode": "file",
-	"out": "docs"
+	"entryPoints": ["source/index.ts"],
+	"out": "docs",
+	"tsconfig": "source/tsconfig.json"
 }

@@ -1,4 +1,4 @@
-[docs-url]: https://seancroach.github.io/ts-opaque/globals.html
+[docs-url]: https://seancroach.github.io/ts-opaque/modules.html
 [downloads-badge]: https://img.shields.io/npm/dt/ts-opaque?logo=npm
 [opaque-types-url]: https://codemix.com/opaque-types-in-javascript/
 [github-ci-badge]:
@@ -20,7 +20,7 @@ TypeScript!_
 
 Install `ts-opaque` through npm:
 
-```sh
+```
 $ npm install ts-opaque
 ```
 
