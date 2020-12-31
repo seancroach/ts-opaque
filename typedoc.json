@@ -1,6 +1,5 @@
 {
 	"inputFiles": "source",
-	"logger": "none",
 	"mode": "file",
 	"out": "docs"
 }

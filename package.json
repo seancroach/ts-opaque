@@ -19,8 +19,8 @@
 		"format": "npm run prettier:write",
 		"lint": "eslint \"**/*.ts\"",
 		"prepare": "npm run prettier:write && npm run build",
-		"prettier:check": "prettier \"**\" --check --loglevel silent",
-		"prettier:write": "prettier \"**\" --write --loglevel silent",
+		"prettier:check": "prettier \"**\" --check",
+		"prettier:write": "prettier \"**\" --write",
 		"test": "npm run prettier:check && tsc -p type-tests && ava --fail-fast"
 	},
 	"files": [
