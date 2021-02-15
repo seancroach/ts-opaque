@@ -3,7 +3,7 @@
 [opaque-types-url]: https://codemix.com/opaque-types-in-javascript/
 [github-ci-badge]: https://img.shields.io/github/workflow/status/seancroach/ts-opaque/CI?logo=github
 [github-ci-url]: https://github.com/seancroach/ts-opaque/actions?query=workflow%3A%22CI%22
-[license-url]: https://github.com/seancroach/ts-opaque/blob/master/license
+[license-url]: https://github.com/seancroach/ts-opaque/blob/latest/license
 [release-url]: https://www.npmjs.com/package/ts-opaque
 
 # ts-opaque
