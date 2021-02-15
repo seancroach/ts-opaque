@@ -75,17 +75,17 @@ There are other types and helper function `ts-opaque` exports as well! Check out
 
 ## API
 
-- [`Opaque`](https://github.com/seancroach/ts-opaque/blob/latest/source/Opaque.ts)
+- [`Opaque`](https://github.com/seancroach/ts-opaque/blob/latest/source/Opaque.ts) - Create an opaque type.
 
 ### Helper Types
 
-- [`BaseType`](https://github.com/seancroach/ts-opaque/blob/latest/source/BaseType.ts)
-- [`BrandType`](https://github.com/seancroach/ts-opaque/blob/latest/source/BrandType.ts)
+- [`BaseType`](https://github.com/seancroach/ts-opaque/blob/latest/source/BaseType.ts) - Get the base type of an opaque type.
+- [`BrandType`](https://github.com/seancroach/ts-opaque/blob/latest/source/BrandType.ts) - Get the brand type of an opaque type.
 
 ### Helper Functions
 
-- [`create`](https://github.com/seancroach/ts-opaque/blob/latest/source/create.ts)
-- [`widen`](https://github.com/seancroach/ts-opaque/blob/latest/source/widen.ts)
+- [`create`](https://github.com/seancroach/ts-opaque/blob/latest/source/create.ts) - Cast a value to an opaque type.
+- [`widen`](https://github.com/seancroach/ts-opaque/blob/latest/source/widen.ts) - Widen an opaque type to its base type.
 
 ## Related Works
 
