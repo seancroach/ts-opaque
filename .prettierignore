@@ -1,8 +1,10 @@
-dist/
-docs/
+.husky
+dist
+docs
 
 .editorconfig
 .gitattributes
 .gitignore
+.npmrc
 .prettierignore
 package-lock.json

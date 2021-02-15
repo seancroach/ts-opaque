@@ -18,7 +18,10 @@ import type { Symbols } from "./Symbols";
  *
  * The brand type of an opaque type can be anything.
  */
+// While it might be more desirable for `BaseType` to default to `unknown`, it
+// may introduce semantic errors since it's almost never desirable from the
+// package consumer's perspective; this error would also be "silent" too.
 export type Opaque<BaseType, BrandType = unknown> = BaseType & {
-	readonly [Symbols.base]: BaseType;
-	readonly [Symbols.brand]: BrandType;
+  readonly [Symbols.base]: BaseType;
+  readonly [Symbols.brand]: BrandType;
 };

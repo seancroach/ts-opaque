@@ -1,4 +1,4 @@
-import type { AnyOpaque } from "./AnyOpaque";
+import type Opaque from "./index";
 import type { Symbols } from "./Symbols";
 
 /**
@@ -10,5 +10,5 @@ import type { Symbols } from "./Symbols";
  * @template OpaqueType The opaque type whose base type is to be obtained.
  */
 export type BaseType<
-	OpaqueType extends AnyOpaque
+  OpaqueType extends Opaque<unknown>
 > = OpaqueType[typeof Symbols.base];

@@ -1,0 +1,6 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+npx --no-install prettier -c **
+npx --no-install tsc -p type-tests
+npx --no-install ava

@@ -1,4 +1,4 @@
-import type { AnyOpaque } from "./AnyOpaque";
+import type { Opaque } from "./Opaque";
 import type { Symbols } from "./Symbols";
 
 /**
@@ -11,5 +11,5 @@ import type { Symbols } from "./Symbols";
  * @template OpaqueType The opaque type whose brand's type is to be obtained.
  */
 export type BrandType<
-	OpaqueType extends AnyOpaque
+  OpaqueType extends Opaque<unknown>
 > = OpaqueType[typeof Symbols.brand];

@@ -1,4 +1,4 @@
-import type { AnyOpaque } from "./AnyOpaque";
+import type { Opaque } from "./Opaque";
 import type { BaseType } from "./BaseType";
 
 /**
@@ -15,8 +15,8 @@ import type { BaseType } from "./BaseType";
  * @template OpaqueType The opaque type to cast the given value `value` to.
  * @param valueThe value that is to be casted to the given opaque type.
  */
-export function create<OpaqueType extends AnyOpaque>(
-	value: BaseType<OpaqueType>
+export function create<OpaqueType extends Opaque<unknown>>(
+  value: BaseType<OpaqueType>
 ): OpaqueType {
-	return value as OpaqueType;
+  return value as OpaqueType;
 }

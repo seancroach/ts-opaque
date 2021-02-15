@@ -1,8 +1,7 @@
 {
-	"extends": "./tsconfig.root.json",
-	"compilerOptions": {
-		"noEmit": true,
-		"importsNotUsedAsValues": "error"
-	},
-	"include": ["examples", "source", "tests", "type-tests"]
+  "extends": "@seancroach/tsconfig",
+  "compilerOptions": {
+    "noEmit": true
+  },
+  "include": ["source", "tests", "type-tests"]
 }

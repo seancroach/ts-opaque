@@ -1,4 +1,4 @@
-import type { AnyOpaque } from "./AnyOpaque";
+import type { Opaque } from "./Opaque";
 import type { BaseType } from "./BaseType";
 
 /**
@@ -16,8 +16,8 @@ import type { BaseType } from "./BaseType";
  * @param value
  * The value that is to be casted to the given opaque type's base type.
  */
-export function widen<OpaqueType extends AnyOpaque>(
-	value: OpaqueType
+export function widen<OpaqueType extends Opaque<unknown>>(
+  value: OpaqueType
 ): BaseType<OpaqueType> {
-	return value;
+  return value;
 }
