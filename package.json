@@ -1,6 +1,6 @@
 {
   "name": "ts-opaque",
-  "version": "2.2.1",
+  "version": "3.0.0",
   "description": "Easy-to-use library that implements opaque types in TypeScript!",
   "license": "MIT",
   "repository": "seancroach/ts-opaque",
